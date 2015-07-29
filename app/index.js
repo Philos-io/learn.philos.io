@@ -1,7 +1,11 @@
 import angular from 'angular';
+import 'angular-route';
+
+var {
+	bootstrap, module
+} = angular;
 
 
-console.log('inside this file')
+module('learn.philos.io', ['ngRoute']);
 
-
-angular.module('learn.philos.io', ['ngRoute']);
+bootstrap(document, ['learn.philos.io'], { strictDI: true});
